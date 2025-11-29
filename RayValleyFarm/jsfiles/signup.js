@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Get references to DOM elements
     // Hamburger icon - the button that opens the menu
-    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const hamburger = document.getElementById('hamburger');
     
     // Mobile menu overlay - the sliding menu panel
     const mobileMenu = document.getElementById('mobile-menu');
@@ -87,4 +87,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
+
 });
