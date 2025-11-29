@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayvalley Login</title>
+
+    <link rel="stylesheet" href="cssfile/login.css">
+</head>
+<body>
+
+    <header>
+        <!-- Logo container - links back to home page -->
+       <Nav class="header1">
+            <div class="rayvalley-logo">
+                <a href="index.html">
+                     <img src="Ray Valley pics/Rayvalley favicon 1.png" alt="rayvalley logo">
+                </a>
+            </div>
+            <div class="nav-ul">
+                <ul class="nav-list">
+                    <li class="outline1">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="outline2">
+                        <a href="about.html">About </a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="outline5">
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="login">
+                <button class="login-btn" type="button">Login</button>
+            </div>
+            <div>
+                <img class="hamburger" src="Ray Valley pics/hamburger.png" alt="hamburger">
+            </div>
+        </Nav>
+    </header>
+
+
+   
+    <!-- Login Page Content -->
+    <!-- Two-column layout: image on left, form on right (desktop) -->
+    <section class="login-page-container">
+        <!-- Image Column (Left) -->
+        <div class="login-image-container">
+            <img src="./Ray Valley pics/farmer.webp" alt="Farmer working" class="login-image">
+        </div>
+        <!-- Form Column (Right) -->
+        <div class="login-form-container">
+            <!-- Page Title -->
+            <h1>Welcome Back</h1>
+            <p>Please login to access your account</p>
+            
+            <!-- Login Form to collect user imput -->
+            
+            <form class="login-form" action="#" method="POST">
+                <!-- Email Input Field -->
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="your.email@example.com" 
+                        required
+                    >
+                </div>
+                
+                <!-- Password Input Field -->
+                <!-- type="password" hides the input text for security -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Enter your password" 
+                        required
+                    >
+                </div>
+                
+                <!-- Submit Button -->
+                
+                <button type="submit" class="btn-primary">Login</button>
+            </form>
+            
+            <!-- Additional Links -->
+            <p style="margin-top: var(--spacing-md); text-align: center; font-size: var(--font-size-sm);">
+                Don't have an account? <a href="signup.html" style="color: var(--color-primary);">Sign up here</a>
+            </p>
+        </div>
+    </section>
+
+
+    <footer class="footer-main-container">
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About Ray Valley Farms</h3>
+                <p>Empowering farmers with technology and sustainable farming practices. We help realize your dreams of investing in Agriculture.</p>
+            </div>
+            
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Ashely Botwe, Accra, Ghana</p>
+                <a href="tel:+233246663097">+233 24 666 3097</a>
+                <a href="mailto:felixcoaddi@gmail.com">felixcoaddi@gmail.com</a>
+            </div>
+            
+            <!-- Social Media Section -->
+            <div class="footer-section footer-social">
+                <h3>Follow Us</h3>
+                <div class="footer-social-icons">
+                    <img src="./Ray Valley pics/layer1.png" alt="Social media icons" class="footer">
+                </div>
+                <p>Connect with us on social media for updates and farming tips.</p>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ray Valley Farms. All rights reserved.</p>
+        </div>
+    </footer>
+    <script></script>
+</body>
+</html>

@@ -1,0 +1,1094 @@
+:root {
+    /* Color Variables - Primary brand colors */
+    --color-primary: #53C351;
+    /* Main green color for buttons and accents */
+    --color-primary-dark: #45a844;
+    /* Darker green for hover states */
+    --color-primary-darker: #254330;
+    /* Very dark green for backgrounds */
+    --color-dark-bg: #1C3A27;
+    /* Dark background color */
+
+    /* Text Colors */
+    --color-text-primary: #000000;
+    /* Main text color (black) */
+    --color-text-white: #ffffff;
+    /* White text for dark backgrounds */
+
+    /* Background Colors */
+    --color-bg-white: #ffffff;
+    /* White background */
+    --color-bg-overlay: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent overlay */
+
+    /* Spacing Variables - Consistent spacing throughout */
+    --spacing-xs: 10px;
+    --spacing-sm: 15px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
+    --spacing-xl: 40px;
+    --spacing-xxl: 50px;
+
+    /* Border Radius */
+    --radius-sm: 10px;
+    --radius-md: 30px;
+    --radius-lg: 50px;
+
+    /* Font Sizes */
+    --font-size-xs: 10px;
+    --font-size-sm: 13px;
+    --font-size-base: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-xxl: 24px;
+    --font-size-hero: 40px;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease-in-out;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fcf5f5f7;
+
+}
+
+nav {
+    display: flex;
+    padding-right: 0.625rem;
+    padding-top: 0.625rem;
+    padding-left: 0.625rem;
+    justify-content: space-between;
+
+
+}
+
+nav a {
+    color: #000;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--color-primary);
+    /* Using CSS variable */
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    /* Space between text and underline */
+    color: #53C351;
+
+}
+
+nav .rayvalley-logo {
+    width: 8.152rem;
+    height: 5.3125rem;
+    transition: transform 0.4s;
+    cursor: all-scroll;
+
+}
+
+nav .rayvalley-logo:hover {
+    transform: rotate(360deg);
+}
+
+nav ul {
+
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    font-size: 0.9375rem;
+    padding-top: 1.25rem;
+    padding-right: 1rem;
+    cursor: auto;
+
+
+}
+
+nav li {
+    margin-right: 1.25rem;
+
+}
+
+
+.login {
+    color: #25d366;
+    padding-top: 2.3125rem;
+    padding-left: 1.5rem;
+    font-family: sans-serif;
+
+
+
+
+}
+
+.login-btn {
+    background-color: #53c351;
+    border-radius: 0.62rem;
+    width: 6.25rem;
+    height: 2.1875rem;
+    color: #ffff;
+    cursor: pointer;
+    border: none;
+    border-color: #254330;
+}
+
+.login-btn:hover {
+    background-color: #33e875;
+    border-color: #254330;
+}
+
+.hamburger {
+    display: none;
+}
+
+main {
+    overflow: hidden;
+}
+
+/* hero section*/
+.hero {
+    display: flex;
+}
+
+.heromess {
+    width: 70%;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.heroimg {
+    width: 40%;
+    margin-right: 15rem;
+    align-items: stretch;
+    align-self: stretch;
+    max-width: 500%;
+
+
+}
+
+.heroimg img {
+    width: 200%;
+
+}
+
+.heroimg:hover {
+    transform: scale(1.1);
+}
+
+.join-btn-div {
+    padding-left: 3.25rem;
+    margin-right: 1rem;
+    padding-top: 1rem;
+
+
+}
+
+.join-btn {
+    background-color: #53c351;
+    border-radius: 0.62rem;
+    width: 6.25rem;
+    height: 2.1875rem;
+    font-size: 0.875rem;
+    color: #ffff;
+    cursor: pointer;
+    border-color: #53c351;
+}
+
+.join-btn:hover {
+    border-color: #254330;
+    background-color: #33e875;
+}
+
+
+.join {
+    display: flex;
+}
+
+/* steps to star your farm section*/
+.Steps-0 {
+
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.Steps-mess {
+    justify-content: center;
+    text-align: center;
+}
+
+.Steps {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 1rem;
+    gap: 1rem;
+
+}
+
+.Steps:hover {
+    transform: scale(1.1);
+
+}
+
+.Steps-1 {
+    padding-right: 3.25rem;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    /* Cover the entire area while maintaining aspect ratio */
+}
+
+.Steps-1:hover {
+    transform: scale(1.1);
+
+}
+
+.Steps-2 {
+    padding-right: 3.25rem;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    /* Cover the entire area while maintaining aspect ratio */
+}
+
+.Steps-2:hover {
+    transform: scale(1.1);
+
+}
+
+.Steps-3 {
+    padding-left: 3.25rem;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    /* Cover the entire area while maintaining aspect ratio */
+}
+
+.Steps-3:hover {
+    transform: scale(1.1);
+
+}
+
+/* make green section */
+.make-green {
+    display: flex;
+    padding-bottom: 2rem;
+
+}
+
+.make-green-img {
+    width: 50%;
+    justify-content: center;
+}
+
+.make-green-img:hover {
+    transform: scale(1.1);
+}
+
+.make-green-mess {
+    width: 50%;
+    margin-right: 10rem;
+    margin-top: 3.25rem;
+    padding-top: 3.25rem;
+}
+
+.make-green-btn1 {
+    width: 7.5rem;
+    height: 2.1875rem;
+    font-family: sans-serif;
+    font-size: 0.875rem;
+    background: #254330;
+    border-radius: 0.62rem;
+    color: #ffff;
+
+
+}
+
+.make-green-btn1:hover {
+    border-color: #53c351;
+    cursor: pointer;
+
+}
+
+.Livestock {
+    display: flex;
+}
+
+.Livestock-mess {
+    width: 50%;
+    margin-right: 10rem;
+}
+
+.Livestock-img {
+    width: 50%;
+}
+
+.Livestock-img:hover {
+    transform: scale(1.1);
+}
+
+.Livestock-btn {
+    display: flex;
+    color: #53c351;
+
+}
+
+.Livestock-btn0 {
+    padding-top: 1rem;
+}
+
+.Livestock-btn1 {
+    margin-right: 1rem;
+    width: 8.5rem;
+    height: 2.1875rem;
+    font-family: sans-serif;
+    font-size: 0.875rem;
+    background: #ffff;
+    border-radius: 0.62rem;
+    border-color: #53c351;
+    color: #53c351;
+    cursor: pointer;
+}
+
+.Livestock-btn1:hover {
+    border-color: #254330;
+    background-color: aliceblue;
+}
+
+/* cash cropping section  */
+
+.Cash-cropping {
+    display: flex;
+    padding: 2rem;
+}
+
+.Cash-cropping-mess {
+    width: auto;
+    position: static;
+    margin-right: 8rem;
+}
+
+.Cash-cropping-img {
+    width: auto;
+}
+
+.Cash-cropping-img:hover {
+    transform: scale(1.1);
+}
+
+.Cash-cropping-btn1 {
+    margin-right: 1rem;
+    width: 8.5rem;
+    height: 2.1875rem;
+    font-family: sans-serif;
+    font-size: 0.875rem;
+    background: #ffff;
+    border-radius: 0.62rem;
+    border-color: #53c351;
+    color: #53c351;
+    cursor: pointer;
+}
+
+.Cash-cropping-btn1:hover {
+    border-color: #254330;
+    background-color: azure;
+}
+
+/* before-footer-section */
+.b-footer {
+    background-color: #1C3A27;
+    margin: 9.375rem 18rem 1.875rem 12.5rem;
+    padding: 1.5rem;
+    border-radius: 2.5rem 2.5rem 2.5rem 0.3125rem;
+    height: 20.35rem;
+    display: flex;
+    padding-right: 2rem;
+    transition: transform 0.4s ease-in-out;
+    position: relative;
+    align-items: center;
+    width: 60%;
+}
+
+.b-footer-mess {
+    padding-right: 20rem;
+    position: relative;
+    color: #ffff;
+    width: 110%;
+    margin-top: 3rem;
+    font-size: 100%;
+}
+
+.b-footer-btn {
+    margin-right: 1rem;
+    object-fit: contain;
+
+}
+
+.b-footer-btn0 {
+    background-color: #53c351;
+    border-radius: 0.62rem;
+    width: 6.25rem;
+    height: 2.1875rem;
+    font-size: fit;
+    color: #ffff;
+    cursor: pointer;
+    border-color: #53c351;
+    transition: transform 0.4s ease;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.b-footer-btn0:hover {
+    background-color: #33e875
+}
+
+.img3 {
+    position: absolute;
+    right: 1rem;
+    bottom: 0rem;
+    object-fit: contain;
+    z-index: 6;
+    flex-direction: column;
+    width: auto;
+    transform: scale(1);
+    margin-left: 50%;
+    align-items: stretch;
+    align-self: stretch;
+    width: fit-content;
+}
+
+.img-0 {
+    position: absolute;
+    right: 70%;
+    bottom: 2rem;
+    object-fit: contain;
+    width: 20%;
+}
+
+.img-1 {
+    position: absolute;
+    right: 38%;
+    bottom: 2rem;
+    object-fit: contain;
+    width: 20%;
+}
+
+/* footer  */
+.footer-main-container {
+    background-color: var(--color-dark-bg);
+    color: var(--color-text-white);
+    padding: var(--spacing-xxl) var(--spacing-xl);
+    margin-top: var(--spacing-xxl);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-xxl);
+}
+
+.footer-section h3 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text-white);
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: var(--font-size-base);
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    line-height: 1.8;
+    display: block;
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-section a:hover {
+    color: var(--color-primary);
+    transition: color var(--transition-fast);
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: var(--spa);
+    align-items: center;
+}
+
+.footer-social-icons img {
+    width: 60%;
+    transition: transform var(--transition-fast);
+}
+
+.footer-social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: var(--font-size-sm);
+}
+
+
+
+/* media queries @ max-width 750px */
+
+@media screen and (max-width:46.875rem) {
+    h1 {
+        font-size: x-large;
+
+    }
+
+    h2 {
+        font-size: larger;
+    }
+
+    p {
+        font-size: large;
+    }
+
+    /* nav media query */
+    .nav-ul,
+    .login {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-right: 0rem;
+        padding-right: 0rem;
+    }
+
+    .hamburger:hover {
+        background-color: #1C3A27;
+    }
+
+    /* hero section  */
+    .hero {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .heromess {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding-top: 0.5rem;
+        margin-top: 0.5rem;
+        padding-left: 0rem;
+        margin-left: 0rem;
+    }
+
+
+    .heroimg {
+        display: none;
+    }
+
+    .join {
+        justify-content: center;
+        padding-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    /* steps section  */
+    .Steps0 {
+        justify-content: center;
+        text-align: center;
+        width: auto;
+
+    }
+
+    .Steps-mess {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        width: auto;
+        padding-top: 2rem;
+
+    }
+
+    .Steps {
+        width: auto;
+        justify-content: center;
+        padding: 1rem;
+
+
+    }
+
+    .Steps-1 {
+        padding: 1rem;
+    }
+
+    .Steps-1img {
+        width: 90%;
+    }
+
+    .Steps-2 {
+        padding: 1rem;
+    }
+
+    .Steps-2img {
+        width: 90%;
+    }
+
+    .Steps-3 {
+        padding: 1rem;
+    }
+
+    .Steps-3img {
+        width: 90%;
+    }
+
+
+    /* make green section  */
+
+    .make-green {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .make-green-mess {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        top: -33rem;
+    }
+
+    .make-green-img {
+        width: 100%;
+        padding-top: 1rem;
+        position: relative;
+        top: 15rem;
+
+    }
+
+    .make-green-img1 {
+        width: 70%;
+    }
+
+    /* livestock farming */
+    .Livestock {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 0rem;
+    }
+
+    .Livestock-mess {
+        justify-content: center;
+        text-align: center;
+        width: auto;
+
+    }
+
+    .Livestock-img1 {
+        width: 150%;
+    }
+
+    .Livestock-btn {
+        justify-content: center;
+    }
+
+    /* cash cropping section  */
+    .Cash-cropping {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+
+    }
+
+    .Cash-cropping-img {
+        position: relative;
+        top: 16rem;
+
+    }
+
+    .Cash-cropping-img1 {
+        width: 100%;
+    }
+
+    .Cash-cropping-mess {
+        justify-content: center;
+        text-align: center;
+        width: auto;
+        padding-top: 1rem;
+
+    }
+
+    .Cash-cropping-mess0 {
+        position: relative;
+        top: -25rem;
+    }
+
+    /* before footer section */
+    .b-footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: transparent;
+        margin: 0rem;
+        padding: 0rem, 0rem;
+        border-radius: none;
+
+
+
+
+
+
+    }
+
+    .before-footer-section {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        background-color: #254330;
+        flex-direction: column;
+        align-items: center;
+        padding: 7%;
+
+
+
+    }
+
+    .b-footer-mess {
+        justify-content: center;
+        text-align: center;
+        width: 150%;
+        padding: 1rem;
+        padding-right: 0rem;
+        flex-direction: column;
+
+
+    }
+
+
+
+    .b-footer h2 {
+        size: 2rem;
+    }
+
+    .img-0 {
+        display: none;
+
+    }
+
+    .img-1 {
+        display: none;
+
+    }
+
+    .img3 {
+        display: none;
+    }
+
+    .b-footer-btn {
+
+        justify-content: center;
+        align-items: center;
+        margin-left: 12rem;
+
+
+    }
+
+
+}
+
+
+/* media queries @ max-width 500px */
+
+@media screen and (max-width:31.25rem) {
+    h1 {
+        font-size: large;
+
+    }
+
+    h2 {
+        font-size: medium;
+    }
+
+    p {
+        font-size: smaller;
+    }
+
+    /* nav media query */
+    .nav-ul,
+    .login {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-right: 0rem;
+        padding-right: 0rem;
+    }
+
+    .hamburger:hover {
+        background-color: #1C3A27;
+    }
+
+    /* hero section  */
+    .hero {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .heromess {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding-top: 0.5rem;
+        margin-top: 0.5rem;
+        padding-left: 0rem;
+        margin-left: 0rem;
+    }
+
+
+    .heroimg {
+        display: none;
+    }
+
+    .join {
+        justify-content: center;
+        padding-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    /* steps section  */
+    .Steps0 {
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+
+    }
+
+    .Steps-mess {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 2rem;
+
+
+    }
+
+    .Steps {
+        width: auto;
+        justify-content: center;
+        padding: 0rem;
+        font-size: small;
+
+    }
+
+    .Steps-1 {
+        padding: 0rem;
+        margin: 0.5rem;
+    }
+
+    .Steps-1img {
+        width: 50%;
+    }
+
+    .Steps-2 {
+        padding: 0rem;
+        margin: 0.5rem;
+    }
+
+    .Steps-2img {
+        width: 50%;
+    }
+
+    .Steps-3 {
+        padding: 0rem;
+        margin: 0.5rem;
+    }
+
+    .Steps-3img {
+        width: 50%;
+    }
+
+
+    /* make green section  */
+
+    .make-green {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 0rem;
+    }
+
+    .make-green-mess {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        top: -19rem;
+    }
+
+    .make-green-img {
+        width: 100%;
+        padding-top: 1rem;
+        position: relative;
+        top: 13rem;
+
+    }
+
+    .make-green-img1 {
+        width: 60%;
+    }
+
+    /* livestock farming */
+    .Livestock {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .Livestock-mess {
+        justify-content: center;
+        text-align: center;
+        width: auto;
+        margin: 0rem;
+
+    }
+
+    .Livestock-img1 {
+        width: 170%;
+        justify-content: center;
+    }
+
+    .Livestock-btn {
+        justify-content: center;
+    }
+
+    /* cash cropping section  */
+    .Cash-cropping {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+
+    }
+
+    .Cash-cropping-img {
+        position: relative;
+        top: 16rem;
+
+    }
+
+    .Cash-cropping-img1 {
+        width: 100%;
+    }
+
+    .Cash-cropping-mess {
+        justify-content: center;
+        text-align: center;
+        width: auto;
+        padding-top: 1rem;
+        margin: 0rem;
+
+    }
+
+    .Cash-cropping-mess0 {
+        position: relative;
+        top: -12rem;
+    }
+
+    /* before footer section */
+    .b-footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: transparent;
+        margin: 0rem;
+        padding: 0rem;
+        border-radius: none;
+
+    }
+
+    .before-footer-section {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        background-color: #254330;
+
+    }
+
+    .b-footer-mess0 {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    .b-footer-mess {
+        justify-content: center;
+        text-align: center;
+        width: 75%;
+        margin-left: 4rem;
+
+
+
+
+    }
+
+    .b-footer h2 {
+        size: 2rem;
+    }
+
+    .b-footer-img0 {
+        display: none;
+    }
+
+    .b-footer-img1 {
+        display: none;
+    }
+
+    .b-footer-img3 {
+        display: none;
+    }
+
+    .b-footer-btn {
+        padding-top: 0rem;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+
+
+
+}

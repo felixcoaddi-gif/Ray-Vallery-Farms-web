@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ray Valley Farms</title>
+
+    <link rel="stylesheet" href="cssfile/contact.css">
+</head>
+<body>
+     <!-- Header section containing logo, navigation, and login button -->
+    <header>
+        <!-- Logo container - links back to home page -->
+       <Nav class="header1">
+            <div class="rayvalley-logo">
+                <a href="index.html">
+                     <img src="Ray Valley pics/Rayvalley favicon 1.png" alt="rayvalley logo">
+                </a>
+            </div>
+            <div class="nav-ul">
+                <ul class="nav-list">
+                    <li class="outline1">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="outline2">
+                        <a href="about.html">About </a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="outline5">
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="login">
+                <button class="login-btn" type="button">Login</button>
+            </div>
+            <div>
+                <img class="hamburger" src="Ray Valley pics/hamburger.png" alt="hamburger">
+            </div>
+        </Nav>
+    </header>
+
+    
+
+    <!-- Contact Page Content -->
+    <section class="contact-page-container">
+        <!-- Hero Section -->
+        <div class="contact-hero">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+
+        <!-- Contact Content Grid -->
+        <div class="contact-content">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>
+                    <strong>Address:</strong><br>
+                    Ashely Botwe, Accra, Ghana
+                </p>
+                <p>
+                    <strong>Phone:</strong><br>
+                    <a href="tel:+233246663097" style="color: var(--color-primary); text-decoration: none;">+233 24 666 3097</a>
+                </p>
+                <p>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:olitech1010@gmail.com" style="color: var(--color-primary); text-decoration: none;">felixcoaddi@gmail.com</a>
+                </p>
+                <p>
+                    <strong>Business Hours:</strong><br>
+                    Monday - Friday: 9:00 AM - 5:00 PM<br>
+                    Saturday: 10:00 AM - 2:00 PM<br>
+                    Sunday: Closed
+                </p>
+                <!-- Google Business Profile Link for Reviews -->
+                <p style="margin-top: var(--spacing-md);">
+                    <a href="https://share.google/HuDOOyPcgZzexN2P4" target="_blank" class="btn-primary" style="display: inline-block; text-decoration: none;">
+                        Leave Us a Review
+                    </a>
+                </p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h2>Send Us a Message</h2>
+                <!-- Contact Form -->
+                <!-- Forms allow users to submit information to the website -->
+                <form class="contact-form" action="#" method="POST">
+                    <!-- Name Input -->
+                    <div class="form-group">
+                        <label for="name">Your Full Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Felix Owusu-Addi" 
+                            required
+                        >
+                    </div>
+                    
+                    <!-- Email Input -->
+                    <div class="form-group">
+                        <label for="contact-email">Your Email</label>
+                        <input 
+                            type="email" 
+                            id="contact-email" 
+                            name="email" 
+                            placeholder="owusu.addi@example.com" 
+                            required
+                        >
+                    </div>
+                    
+                    <!-- Subject Input -->
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject" 
+                            placeholder="Inquiry about our farming services" 
+                            required
+                        >
+                    </div>
+                    
+                    <!-- Message Textarea -->
+                    <!-- textarea is used for multi-line text input -->
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            placeholder="I would like to learn more about your farming services and how you can help me start my agricultural journey..." 
+                            required
+                        ></textarea>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Google Maps Section -->
+        <div class="map-section">
+            <h2>Find Us on the Map</h2>
+            <p>Visit our office in Accra, Ghana</p>
+            <!-- Google Maps Embed -->
+            <!-- iframe is used to embed Google Maps -->
+            <!-- The src contains the Google Maps embed URL -->
+            <!-- We use the Google Maps share link converted to embed format -->
+            <iframe 
+                src="https://www.google.com/maps/place/FELIXCOADDI+ENTERPRISE/@5.6347177,-0.2031983,13z/data=!4m22!1m15!4m14!1m6!1m2!1s0xfdf83118631aab3:0xf55058dc7cc71996!2sFELIXCOADDI+ENTERPRISE,+Ablor+Sowah+Russia+Street,+Adenta+Municipality!2m2!1d-0.1221151!2d5.6942268!1m6!1m2!1s0xfdfbba11de67485:0xb78c478eea93b7cc!2sOlives+Technologies,+Accra,+Ghana!2m2!1d-0.208548!2d5.5826717!3m5!1s0xfdf83118631aab3:0xf55058dc7cc71996!8m2!3d5.6942268!4d-0.1221151!16s%2Fg%2F11x6q61xqh?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+                height="450" 
+                style="border:0; border-radius: var(--radius-sm);" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ray Valley Farms Location - Accra, Ghana">
+            </iframe>
+            <!-- Alternative: Direct link to Google Maps -->
+            <p style="margin-top: var(--spacing-md); text-align: center;">
+                <a href="https://maps.app.goo.gl/sq2QHscmQ1UMpQG5A" target="_blank" class="btn-secondary" style="display: inline-block; text-decoration: none;">
+                    Open in Google Maps
+                </a>
+            </p>
+        </div>
+    </section>
+
+
+    <footer class="footer-main-container">
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About Ray Valley Farms</h3>
+                <p>Empowering farmers with technology and sustainable farming practices. We help realize your dreams of investing in Agriculture.</p>
+            </div>
+            
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Ashely Botwe, Accra, Ghana</p>
+                <a href="tel:+233246663097">+233 24 666 3097</a>
+                <a href="mailto:felixcoaddi@gmail.com">felixcoaddi@gmail.com</a>
+            </div>
+            
+            <!-- Social Media Section -->
+            <div class="footer-section footer-social">
+                <h3>Follow Us</h3>
+                <div class="footer-social-icons">
+                    <img src="./Ray Valley pics/layer1.png" alt="Social media icons" class="footer">
+                </div>
+                <p>Connect with us on social media for updates and farming tips.</p>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ray Valley Farms. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="jsfiles/signup.js"></script>
+</body>
+</html>
